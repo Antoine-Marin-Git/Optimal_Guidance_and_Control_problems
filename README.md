@@ -12,8 +12,8 @@ of the sea currents in the area, which are given by a meteorological satellite a
 We want to minimize 
 
 $J(u) = \int _0 ^{t_f} dt = t_f$ subject to 
-     $\dot x & = vcos(\theta) + u(x,y)$
-     $\dot y & = vsin(\theta) + v(x,y)$
+$\dot x & = vcos(\theta) + u(x,y)$
+$\dot y & = vsin(\theta) + v(x,y)$
 
 The Hamiltonian can be written as
 
