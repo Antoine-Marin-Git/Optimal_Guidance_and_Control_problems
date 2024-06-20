@@ -84,7 +84,7 @@ $x(t) = (vcos(\theta) + 2)t + x_i$
 
 $y(t) = (vsin(\theta) -6)t_f + y_i$
 
-Using these equations and solving for $t_f$, we end up with a system of 3 equations and 3 unknown to solve:
+Using these equations and solving for $t_f$, we end up with a system of 3 equations and 3 unknown ($C_1$, $C_2$, and $t_f$) to solve:
 
 $x_f = (vcos(\theta) + 2)t_f + x_i$
 
