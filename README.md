@@ -31,7 +31,7 @@ $\dot p_y = -\frac{\partial \mathcal{H}}{\partial y} = -\left(p_x\frac{\partial 
 
 At optimal control, 
 
-$\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta^*) + vp_ycos(\theta^*) \implies \boxed{tan(\theta^*) = \frac{p_y}{p_x}}$
+$\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta^*) + vp_ycos(\theta^*)$ \implies \boxed{$tan(\theta^*) = \frac{p_y}{p_x}$}
 
 $X(0)$, $X(t_f)$, $t_0$ are known, and $t_f$ is free, so the transversality condition can be written $\mathcal{H}(t_f) = 0$. Given that at optimal control, $\mathcal{H}(t_f)$ is constant, that yields 
 
