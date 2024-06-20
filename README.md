@@ -75,3 +75,5 @@ And the adjoint state equations
 $\dot p_x = 0 \implies p_x = C1$
 
 $\dot p_y = 0 \implies p_y = C2$ 
+
+The control heading $\theta$ is then constant given by $\boxed{\tan(\theta) = \frac{C_2}{C_1}}$
