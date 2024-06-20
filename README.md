@@ -35,7 +35,7 @@ $\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta) + vp_ycos(\
 
 $\implies \boxed{tan(\theta) = \frac{p_y}{p_x}}$
 
-$X(0)$, $X(t_f)$, $t_0$ are known, and $t_f$ is free, so the transversality condition can be written $\mathcal{H}(t_f) = 0$. Given that at optimal control, $\mathcal{H}(t_f)$ is constant, that yields 
+$X(0)$, $X(t_f)$, $t_0$ are known, and $t_f$ is free, so the transversality condition can be written $\mathcal{H}(t_f) = 0$. Given that at optimal control, $\mathcal{H}$ is constant, that yields 
 
 $\forall t ~~~ \mathcal{H}(t) = \mathcal{H}(t_f) = 0$
 
