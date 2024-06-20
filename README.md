@@ -45,9 +45,9 @@ $1 + p_x\left(vcos(\theta) + u(x,y)\right) + p_xtan(\theta)\left(vsin(\theta) + 
 
 Yielding
 
-$p_x = - \frac{1}{vcos(\theta) + u(x,y) + tan(\theta)(vsin(\theta) + v(x,y))$
+$p_x = - \frac{1}{vcos(\theta) + u(x,y) + tan(\theta)(vsin(\theta) + v(x,y))}$
 
-$p_y = - \frac{tan(\theta)}{vcos(\theta) + u(x,y) + tan(\theta)(vsin(\theta) + v(x,y))$
+$p_y = - \frac{tan(\theta)}{vcos(\theta) + u(x,y) + tan(\theta)(vsin(\theta) + v(x,y))}$
 
 Finally, from optimality condition,
 
