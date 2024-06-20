@@ -31,9 +31,9 @@ $\dot p_y = -\frac{\partial \mathcal{H}}{\partial y} = -\left(p_x\frac{\partial 
 
 At optimal control, 
 
-$\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta^*) + vp_ycos(\theta^*)$
+$\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta) + vp_ycos(\theta)$
 
-$\implies$ \boxed{$tan(\theta^*) = \frac{p_y}{p_x}$}
+$\implies$ \boxed{$tan(\theta) = \frac{p_y}{p_x}$}
 
 $X(0)$, $X(t_f)$, $t_0$ are known, and $t_f$ is free, so the transversality condition can be written $\mathcal{H}(t_f) = 0$. Given that at optimal control, $\mathcal{H}(t_f)$ is constant, that yields 
 
@@ -41,19 +41,21 @@ $\forall t ~~~ \mathcal{H}(t) = \mathcal{H}(t_f) = 0$
 
 $1 + p_xvcos(\theta) + p_xu(x,y) + p_yvsin(\theta) + p_yv(x,y) = 0$
 
-$1 + p_x\left(vcos(\theta^*) + u(x,y)\right) + p_xtan(\theta^*)\left(vsin(\theta^*) + v(x,y)\right) = 0$ 
+$1 + p_x\left(vcos(\theta) + u(x,y)\right) + p_xtan(\theta)\left(vsin(\theta) + v(x,y)\right) = 0$ 
 
 Yielding
 
-$p_x = - \frac{1}{vcos(\theta^*) + u(x,y) + tan(\theta^*)(vsin(\theta^*) + v(x,y))$
+$p_x = - \frac{1}{vcos(\theta) + u(x,y) + tan(\theta)(vsin(\theta) + v(x,y))$
 
-$p_y = - \frac{tan(\theta^*)}{vcos(\theta^*) + u(x,y) + tan(\theta^*)(vsin(\theta^*) + v(x,y))$
+$p_y = - \frac{tan(\theta)}{vcos(\theta) + u(x,y) + tan(\theta)(vsin(\theta) + v(x,y))$
 
 Finally, from optimality condition,
 
 $\frac{d}{dt}\left(\frac{\partial \mathcal{H}}{\partial \theta}\right) = 0$
-$\dot p_x vcos(\theta^*) - \dot \theta^* p_x vsin(\theta^*) + \dot p_y vsin(\theta^*) + \dot \theta^* p_y vcos(\theta^*) = 0$\
-$\theta^*\left(p_y vcos(\theta^*) - p_x vsin(\theta^*)\right) = - \left(\dot p_x vcos(\theta^*) + \dot p_y vsin(\theta^*)\right)$
+
+$\dot p_x vcos(\theta) - \dot \theta p_x vsin(\theta) + \dot p_y vsin(\theta) + \dot \theta p_y vcos(\theta) = 0$
+
+$\theta\left(p_y vcos(\theta) - p_x vsin(\theta)\right) = - \left(\dot p_x vcos(\theta) + \dot p_y vsin(\theta)\right)$
 
 
 Let now apply these general relationships to particular use cases.
