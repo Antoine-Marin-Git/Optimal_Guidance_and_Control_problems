@@ -58,7 +58,7 @@ $\dot p_x vcos(\theta) - \dot \theta p_x vsin(\theta) + \dot p_y vsin(\theta) + 
 $\theta\left(p_y vcos(\theta) - p_x vsin(\theta)\right) = - \left(\dot p_x vcos(\theta) + \dot p_y vsin(\theta)\right)$
 
 
-Let now apply these general relationships to particular use cases.
+Let's now apply these general relationships to particular use cases.
 
 # Constant currents
 
