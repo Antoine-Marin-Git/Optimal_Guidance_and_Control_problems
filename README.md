@@ -21,42 +21,28 @@ $\dot y = vsin(\theta) + v(x,y)$
 
 The Hamiltonian can be written as
 
-\begin{equation*}
-    \mathcal{H} = 1 + p^T\dot X = 1 + p_xvcos(\theta) + p_xu(x,y) + p_yvsin(\theta) + p_yv(x,y) \tag{1}
-\end{equation*}
+$\mathcal{H} = 1 + p^T\dot X = 1 + p_xvcos(\theta) + p_xu(x,y) + p_yvsin(\theta) + p_yv(x,y)$
 
 The adjoint equations yield
 
-\begin{align*}\left\{\begin{array}{r@{\mskip\thickmuskip}l}
- \dot p_x & = -\frac{\partial \mathcal{H}}{\partial x} = -\left(p_x\frac{\partial u}{\partial x} + p_y\frac{\partial v}{\partial x}\right) \\
- \dot p_y & = -\frac{\partial \mathcal{H}}{\partial y} = -\left(p_x\frac{\partial u}{\partial y} + p_y\frac{\partial v}{\partial y}\right) \tag{2}
-\label{dotp}
-\end{array}\right.
-\end{align*}
+$\dot p_x = -\frac{\partial \mathcal{H}}{\partial x} = -\left(p_x\frac{\partial u}{\partial x} + p_y\frac{\partial v}{\partial x}\right)$
+
+$\dot p_y = -\frac{\partial \mathcal{H}}{\partial y} = -\left(p_x\frac{\partial u}{\partial y} + p_y\frac{\partial v}{\partial y}\right)$
 
 At optimal control, 
 
-\begin{equation*}
-\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta^*) + vp_ycos(\theta^*) \implies \boxed{tan(\theta^*) = \frac{p_y}{p_x}} \tag{3}
-\label{tan(theta)}
-\end{equation*}
+$\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta^*) + vp_ycos(\theta^*) \implies \boxed{tan(\theta^*) = \frac{p_y}{p_x}}$
 
 $X(0)$, $X(t_f)$, $t_0$ are known, and $t_f$ is free, so the transversality condition can be written $\mathcal{H}(t_f) = 0$. Given that at optimal control, $\mathcal{H}(t_f)$ is constant, that yields 
 
-\begin{gather*}
-    \forall t ~~ \mathcal{H}(t) = \mathcal{H}(t_f) = 0 \\
-    1 + p_xvcos(\theta) + p_xu(x,y) + p_yvsin(\theta) + p_yv(x,y) = 0 \\
-    1 + p_x\left(vcos(\theta^*) + u(x,y)\right) + p_xtan(\theta^*)\left(vsin(\theta^*) + v(x,y)\right) = 0 ~~~ \text{from Eq. \textbf{(\ref{tan(theta)})}}
-\end{gather*}
+$\forall t \mathcal{H}(t) = \mathcal{H}(t_f) = 0$
+$1 + p_xvcos(\theta) + p_xu(x,y) + p_yvsin(\theta) + p_yv(x,y) = 0$
+$1 + p_x\left(vcos(\theta^*) + u(x,y)\right) + p_xtan(\theta^*)\left(vsin(\theta^*) + v(x,y)\right) = 0$ 
 
 Yielding
 
-\begin{align*}\left\{\begin{array}{r@{\mskip\thickmuskip}l}
-p_x & = - \frac{1}{vcos(\theta^*) + u(x,y) + tan(\theta^*)(vsin(\theta^*) + v(x,y))} \\
-p_y & = - \frac{tan(\theta^*)}{vcos(\theta^*) + u(x,y) + tan(\theta^*)(vsin(\theta^*) + v(x,y))} \tag{4}
-\end{array}\right.
-\label{p}
-\end{align*}
+$p_x = - \frac{1}{vcos(\theta^*) + u(x,y) + tan(\theta^*)(vsin(\theta^*) + v(x,y))$
+$p_y = - \frac{tan(\theta^*)}{vcos(\theta^*) + u(x,y) + tan(\theta^*)(vsin(\theta^*) + v(x,y))$
 
 Finally, from optimality condition,
 
