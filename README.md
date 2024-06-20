@@ -88,7 +88,7 @@ Using these equations and solving for $t_f$, we end up with a system of 3 equati
 
 $x_f = (vcos(\theta) + 2)t_f + x_i$
 
-$y_f = (vsin(\theta) -6)t + y_i$
+$y_f = (vsin(\theta) -6)t_f + y_i$
 
 $(vsin(\theta) − 6)(x_f − x_i) = (vcos(\theta) + 2)(y_f − y_i)$
 
