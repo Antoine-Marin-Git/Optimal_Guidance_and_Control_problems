@@ -7,7 +7,7 @@ known that there is a small city at the location $(x_f,y_f) = (−15,35.5)$ ml w
 route to the city. It is assumed that the speed of the ship with respect to the water is constant, $v = 15ml.hr^{-1}$. We also know the speed and direction 
 of the sea currents in the area, which are given by a meteorological satellite as $\vec{v}_c = u(x,y)\textbf{i} +v(x,y)\textbf{j}$.
 
-# General form
+# General formulation
 
 We want to minimize 
 
@@ -97,5 +97,9 @@ The code [Boat_Currents_constant.m](https://github.com/Antoine-Marin-Git/Optimal
 ![alt text](Graphics/Opt_Traj_Constant.png)
 
 ![alt text](Graphics/Opt_Compo_Constant.png)
+
+# Linear Currents
+
+Coming soon!
 
 
