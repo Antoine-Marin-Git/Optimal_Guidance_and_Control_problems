@@ -72,9 +72,9 @@ $\dot y = vsin(\theta) -6$
 
 And the adjoint state equations
 
-$\dot p_x = 0 \implies p_x = C1$
+$\dot p_x = 0 \implies p_x = C_1$
 
-$\dot p_y = 0 \implies p_y = C2$ 
+$\dot p_y = 0 \implies p_y = C_2$ 
 
 The control heading $\theta$ is then constant given by $\boxed{\tan(\theta) = \frac{C_2}{C_1}}$
 
