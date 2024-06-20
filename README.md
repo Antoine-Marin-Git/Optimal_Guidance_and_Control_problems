@@ -92,4 +92,4 @@ $y_f = (vsin(\theta) -6)t + y_i$
 
 $(vsin(\theta) − 6)(x_f − x_i) = (vcos(\theta) + 2)(y_f − y_i)$
 
-The code [Boat_Currents_constant.m](https://github.com/Antoine-Marin-Git/Optimal_Guidance_&_Control_problems/tree/master/Boat_Currents_constant.m)
+The code [Boat_Currents_constant.m](https://github.com/Antoine-Marin-Git/Optimal_Guidance_and_Control_problems/blob/main/Boat_Currents_contant.m)
