@@ -77,3 +77,9 @@ $\dot p_x = 0 \implies p_x = C1$
 $\dot p_y = 0 \implies p_y = C2$ 
 
 The control heading $\theta$ is then constant given by $\boxed{\tan(\theta) = \frac{C_2}{C_1}}$
+
+The state equations can be then integrated to give
+
+$x(t) = (vcos(\theta) + 2)t + x_i$
+
+$y(t) = (vsin(\theta) -6)t + y_i$
