@@ -62,3 +62,16 @@ Let's now apply these general relationships to particular use cases.
 
 # Constant currents
 
+The currents are assumed to be constant given by $\vec{v}_c = 2\textbf{i} - 6\textbf{j}$.
+
+The state equations become therefore
+
+$\dot x = vcos(\theta) + 2$
+
+$\dot y = vsin(\theta) -6$
+
+And the adjoint state equations
+
+$\dot p_x = 0 \implies p_x = C1$
+
+$\dot p_y = 0 \implies p_y = C2$ 
