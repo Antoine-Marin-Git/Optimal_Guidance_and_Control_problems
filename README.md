@@ -56,7 +56,7 @@ $\frac{d}{dt}\left(\frac{\partial \mathcal{H}}{\partial \theta}\right) = 0$
 
 $\dot p_x Vcos(\theta) - \dot \theta p_x Vsin(\theta) + \dot p_y Vsin(\theta) + \dot \theta p_y Vcos(\theta) = 0$
 
-$\theta\left(p_y Vcos(\theta) - p_x Vsin(\theta)\right) = - \left(\dot p_x Vcos(\theta) + \dot p_y Vsin(\theta)\right)$
+$\dot \theta\left(p_ycos(\theta) - p_xsin(\theta)\right) = - \left(\dot p_xcos(\theta) + \dot p_ysin(\theta)\right)$
 
 Let's now apply these general relationships to particular use cases.
 
