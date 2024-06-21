@@ -5,7 +5,7 @@ The following project explores optimal trajectories to minimize the time for a b
 a problem is known as the Zermelo's problem. The ship is located at the point $(x_i,y_i) = (−20,0)$ ml at time t = 0, and has to reach the shore as soon 
 as possible due to a medical emergency. It is known that there is a small city at the location $(x_f,y_f) = (−15,35.5)$ ml with a medical center. We want
 therefore to determine the fastest possible route to the city. It is assumed that the speed of the ship with respect to the water is constant, 
-$v = 15ml.hr^{-1}$. We also know the speed and direction of the sea currents in the area, which are given by a meteorological satellite as
+$V = 15ml.hr^{-1}$. We also know the speed and direction of the sea currents in the area, which are given by a meteorological satellite as
 $\vec{v}_c = u(x,y)\textbf{i} +v(x,y)\textbf{j}$.
 
 # General formulation
@@ -16,13 +16,13 @@ $J(u) = \int _0 ^{t_f} dt = t_f$
 
 subject to 
 
-$\dot x = vcos(\theta) + u(x,y)$
+$\dot x = Vcos(\theta) + u(x,y)$
 
-$\dot y = vsin(\theta) + v(x,y)$
+$\dot y = Vsin(\theta) + v(x,y)$
 
 The Hamiltonian can be written as
 
-$\mathcal{H} = 1 + p^T\dot X = 1 + p_xvcos(\theta) + p_xu(x,y) + p_yvsin(\theta) + p_yv(x,y)$
+$\mathcal{H} = 1 + p^T\dot X = 1 + p_xVcos(\theta) + p_xu(x,y) + p_yVsin(\theta) + p_yv(x,y)$
 
 The adjoint equations yield
 
@@ -32,7 +32,7 @@ $\dot p_y = -\frac{\partial \mathcal{H}}{\partial y} = -\left(p_x\frac{\partial 
 
 At optimal control, 
 
-$\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -vp_xsin(\theta) + vp_ycos(\theta)$
+$\frac{\partial \mathcal{H}}{\partial \theta} = 0 = -Vp_xsin(\theta) + Vp_ycos(\theta)$
 
 $\implies \boxed{tan(\theta) = \frac{p_y}{p_x}}$
 
@@ -40,24 +40,23 @@ $X(0)$, $X(t_f)$, $t_0$ are known, and $t_f$ is free, so the transversality cond
 
 $\forall t ~~~ \mathcal{H}(t) = \mathcal{H}(t_f) = 0$
 
-$1 + p_xvcos(\theta) + p_xu(x,y) + p_yvsin(\theta) + p_yv(x,y) = 0$
+$1 + p_xVcos(\theta) + p_xu(x,y) + p_yVsin(\theta) + p_yv(x,y) = 0$
 
-$1 + p_x\left(vcos(\theta) + u(x,y)\right) + p_xtan(\theta)\left(vsin(\theta) + v(x,y)\right) = 0$ 
+$1 + p_x\left(Vcos(\theta) + u(x,y)\right) + p_xtan(\theta)\left(Vsin(\theta) + v(x,y)\right) = 0$ 
 
 Yielding
 
-$p_x = - \frac{cos(\theta)}{v + cos(\theta)u(x,y) + sin(\theta)v(x,y)}$
+$p_x = - \frac{cos(\theta)}{V + cos(\theta)u(x,y) + sin(\theta)v(x,y)}$
 
-$p_y = - \frac{sin(\theta)}{v + cos(\theta)u(x,y) + sin(\theta)v(x,y)}$
+$p_y = - \frac{sin(\theta)}{V + cos(\theta)u(x,y) + sin(\theta)v(x,y)}$
 
 Finally, from optimality condition,
 
 $\frac{d}{dt}\left(\frac{\partial \mathcal{H}}{\partial \theta}\right) = 0$
 
-$\dot p_x vcos(\theta) - \dot \theta p_x vsin(\theta) + \dot p_y vsin(\theta) + \dot \theta p_y vcos(\theta) = 0$
+$\dot p_x Vcos(\theta) - \dot \theta p_x Vsin(\theta) + \dot p_y Vsin(\theta) + \dot \theta p_y Vcos(\theta) = 0$
 
-$\theta\left(p_y vcos(\theta) - p_x vsin(\theta)\right) = - \left(\dot p_x vcos(\theta) + \dot p_y vsin(\theta)\right)$
-
+$\theta\left(p_y Vcos(\theta) - p_x Vsin(\theta)\right) = - \left(\dot p_x Vcos(\theta) + \dot p_y Vsin(\theta)\right)$
 
 Let's now apply these general relationships to particular use cases.
 
@@ -67,9 +66,9 @@ The currents are assumed to be constant given by $\vec{v}_c = 2\textbf{i} - 6\te
 
 The state equations become therefore
 
-$\dot x = vcos(\theta) + 2$
+$\dot x = Vcos(\theta) + 2$
 
-$\dot y = vsin(\theta) -6$
+$\dot y = Vsin(\theta) -6$
 
 And the adjoint state equations
 
@@ -81,17 +80,17 @@ The control heading $\theta$ is then constant given by $\boxed{\tan(\theta) = \f
 
 The state equations can be then integrated to give
 
-$x(t) = (vcos(\theta) + 2)t + x_i$
+$x(t) = (Vcos(\theta) + 2)t + x_i$
 
-$y(t) = (vsin(\theta) -6)t_f + y_i$
+$y(t) = (Vsin(\theta) -6)t_f + y_i$
 
 Using these equations and solving for $t_f$, we end up with a system of 3 equations and 3 unknown ($C_1$, $C_2$, and $t_f$) to solve:
 
-$x_f = (vcos(\theta) + 2)t_f + x_i$
+$x_f = (Vcos(\theta) + 2)t_f + x_i$
 
-$y_f = (vsin(\theta) -6)t_f + y_i$
+$y_f = (Vsin(\theta) -6)t_f + y_i$
 
-$(vsin(\theta) − 6)(x_f − x_i) = (vcos(\theta) + 2)(y_f − y_i)$
+$(Vsin(\theta) − 6)(x_f − x_i) = (Vcos(\theta) + 2)(y_f − y_i)$
 
 The code [Boat_Currents_constant.m](https://github.com/Antoine-Marin-Git/Optimal_Guidance_and_Control_problems/blob/main/Boat_Currents_contant.m) gives the following components evolution with time, and the associated optimal trajectory. It is a straight line that, in the current configurations, lead a final time $t_f = 3.95 ~ h$ with a control heading of $\theta = 92.8 ~ ^\circ$. The start and end points are highlighted in green and orange respectively.
 
